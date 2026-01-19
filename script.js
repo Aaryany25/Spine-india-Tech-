@@ -11,18 +11,18 @@ function raf(time) {
 
 requestAnimationFrame(raf)
 
-// GSAP
-
-// register plugin
-gsap.registerPlugin(SplitText);
-
-gsap.fromTo(
-  "#aboutRight img",
-  {
-    clipPath: "inset(0 0 100% 0)",
-    // scale:1.1
-  },
-  {
+function Animations(){
+  // GSAP
+  // register plugin
+  gsap.registerPlugin(SplitText);
+  
+  gsap.fromTo(
+    "#aboutRight img",
+    {
+      clipPath: "inset(0 0 100% 0)",
+      // scale:1.1
+    },
+    {
     clipPath: "inset(0 0 0% 0)",
     ease: "none",
     duration:0.5,
@@ -33,7 +33,7 @@ gsap.fromTo(
       end: "top 40%",
       scrub: 1.5,
       pin:true,
-    //   markers:true
+      //   markers:true
     }
   },"start"
 );
@@ -43,13 +43,13 @@ const text = new SplitText("#textSplit", {
   type: "lines"
 });
 gsap.from(text.lines,{
-    opacity:0,
-    // duration:0.5,
-    // delay:2,
-    stagger:0.2,
-    filter:blur("10px"),
-    // y:20,
-    scrollTrigger:{
+  opacity:0,
+  // duration:0.5,
+  // delay:2,
+  stagger:0.2,
+  filter:blur("10px"),
+  // y:20,
+  scrollTrigger:{
         trigger:"#AboutSection",
         scrub:0.5,
         // markers:true,
@@ -58,3 +58,15 @@ end:"+=400",
 pin:true
     }
 },"start")
+}
+Animations()
+function CursorAnimation(){
+ document.addEventListener("mousemove", function (dets) {
+  console.log(dets.x,dets.y)
+    gsap.to("#cursor", {
+      left: dets.x,
+      top: dets.y,
+    });
+  });
+}
+CursorAnimation()
