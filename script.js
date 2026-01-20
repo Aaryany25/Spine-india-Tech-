@@ -1,3 +1,13 @@
+  const marquee = document.getElementById("marquee");
+
+  marquee.addEventListener("mouseenter", () => {
+    marquee.style.animationPlayState = "paused";
+  });
+
+  marquee.addEventListener("mouseleave", () => {
+    marquee.style.animationPlayState = "running";
+  });
+
 // Initialize Lenis
 const lenis = new Lenis({
     infinte:true
