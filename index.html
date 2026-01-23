@@ -9,7 +9,11 @@
    
 </head>
 <body class="bg-zinc-900">
-  <div id="cursor" class="w-8 h-8 fixed z-9 border-2 border-white rounded-full"></div>
+  <div
+  id="cursor"
+  class="hidden sm:block w-8 h-8 fixed z-50 border-2 border-white rounded-full pointer-events-none"
+></div>
+
     <!-- <div id="preloader" class="w-full h-screen bg-black flex items-center justify-center text-white text-3xl">0</div> -->
     <main>
         <!-- HERO SECTION -->
@@ -21,16 +25,18 @@
               bg-zinc-800 text-white font-semibold uppercase">
 
     <div id="navleft" class="text-sm md:text-base flex items-center justify-center">
-      <img src="spine logo.png" alt="" class="w-20 h-20">
+      <img src="spine logo.png" alt="" class="w-20 h-18 mr-5">
       Spine India Technologies
     </div>
 
     <div id="navright" class="hidden md:flex gap-6 text-sm">
       <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Team</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
+      <a href="#AboutSection">About</a>
+      <a href="#TeamSection">Team</a>
+      <a href="#ServiceSection">Services</a>
+      <a href="#CareerSection">Services</a>
+
+      <a href="#Footer">Contact</a>
     </div>
   </nav>
 
@@ -104,8 +110,25 @@
     id="marquee"
     class="flex w-max animate-marquee gap-10 text-5xl font-semibold text-white whitespace-nowrap"
   >
-    <span>Fast • Reliable • Modern • Scalable •</span>
-    <span>Fast • Reliable • Modern • Scalable •</span>
+    <span class="flex items-center justify-b gap-10">
+      <img src="dr ayaz.png" alt="" class="w-25 h-25">
+      <img src="kulurs.png" alt="" class="w-25 h-25">
+      <img src="vedicare.png" alt="" class="w-25 h-25">
+      <img src="Grace Hospital logo (2).png" alt="" class="w-25 h-25">
+      <img src="geneses logon.png" alt="" class="w-25 h-25">
+      <img src="Ayushman.png" alt="" class="w-25 h-25">
+      <img src="saroja.png" alt="" class="w-25 h-25">
+    </span>
+     <span class="flex items-center justify-b gap-10">
+      <img src="dr ayaz.png" alt="" class="w-25 h-25">
+      <img src="kulurs.png" alt="" class="w-25 h-25">
+      <img src="vedicare.png" alt="" class="w-25 h-25">
+      <img src="Grace Hospital logo (2).png" alt="" class="w-25 h-25">
+      <img src="geneses logon.png" alt="" class="w-25 h-25">
+      <img src="Ayushman.png" alt="" class="w-25 h-25">
+      <img src="saroja.png" alt="" class="w-25 h-25">
+    </span>
+    <!-- <span>Fast • Reliable • Modern • Scalable •</span> -->
   </div>
 </div>
 
@@ -631,6 +654,12 @@
                 hover:bg-white hover:text-black transition">
         Book FREE discovery call
       </a>
+    </div>
+    <div class="mt-10 text-xl flex flex-col justify-between  gap-5 py-8">
+      <h2>Address : G-28,Viva Mall, Opp Station Virar West-401303</h2>
+      <h2>Email : info@spineind.com</h2>
+      <h2>Phone : 9527681623</h2>
+
     </div>
   </div>
 
