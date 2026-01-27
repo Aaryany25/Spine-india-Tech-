@@ -27,7 +27,7 @@ function Animations(){
   gsap.registerPlugin(SplitText);
   
   gsap.fromTo(
-    "#aboutRight img",
+    ".sameer img",
     {
       clipPath: "inset(0 0 100% 0)",
       // scale:1.1
@@ -38,12 +38,12 @@ function Animations(){
     duration:0.5,
     scale:1,
     scrollTrigger: {
-      trigger: "#aboutRight",
+      trigger: "#TeamSection",
       start: "35% center",
       end: "top 40%",
       scrub: 1.5,
       pin:true,
-      //   markers:true
+        // markers:true
     }
   },"start"
 );
