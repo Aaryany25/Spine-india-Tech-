@@ -39,9 +39,9 @@ function Animations(){
     scale:1,
     scrollTrigger: {
       trigger: "#TeamSection",
-      start: "35% center",
+      start: "25% center",
       end: "top 40%",
-      scrub: 1.5,
+      // scrub: 1.5,
       pin:true,
         // markers:true
     }
